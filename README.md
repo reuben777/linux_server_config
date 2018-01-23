@@ -32,12 +32,12 @@ Port Range: 2200
 
 ## Server Firewall setup
 
-	1. `sudo ufw default deny incoming`
-	2. `sudo ufw default allow outgoing`
-	3. `sudo ufw allow 2200/tcp`
-	4. `sudo ufw allow 80/tcp`
-	5. `sudo ufw allow 123/udp`
-	6. `sudo ufw enable`
+1. `sudo ufw default deny incoming`
+2. `sudo ufw default allow outgoing`
+3. `sudo ufw allow 2200/tcp`
+4. `sudo ufw allow 80/tcp`
+5. `sudo ufw allow 123/udp`
+6. `sudo ufw enable`
 
 ## Create sudo user named grader
 1. `sudo adduser grader`
@@ -145,7 +145,7 @@ sudo pip install flask-httpauth
 	sys.path.insert(0,"/var/www/ItemCatalog/")
 
 	from ItemCatalog import app as application
-	application.secret_key = ''super_secret_key''
+	application.secret_key = 'super_secret_key'
 	```
 
 ## Configure and Enable Hosting
